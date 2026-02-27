@@ -2,34 +2,28 @@
 import PhoneIcon from "@/assets/icons/PhoneIcon"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
-import { IoIosArrowDown } from "react-icons/io"
 
 interface NavType {
   navRoute: string,
   navName: string,
-  dropDownArrow?: boolean
 }
 
   const navLinks: NavType[] = [
     {
       navRoute: "/",
       navName: "Home",
-      dropDownArrow: true,
     },
     {
       navRoute: "/shop",
       navName: "Shop",
-      dropDownArrow: true,
     },
     {
       navRoute: "/pages",
       navName: "Pages",
-      dropDownArrow: true,
     },
     {
       navRoute: "/blogs",
       navName: "Blog",
-      dropDownArrow: true,
     },
     {
       navRoute: "/about",
@@ -55,9 +49,6 @@ const HeaderBottom = () => {
                 <Link href={item.navRoute} className={`inline-block ${path === '/' || path === '/shop' ? 'text-secondary group-hover:text-white' : ' text-text group-hover:text-primary'}  font-poppins text-[14px] transition-all font-medium `}>
                   {item.navName}
                 </Link>
-                {
-                  item.dropDownArrow && <IoIosArrowDown className={`relative top-0.5 ${path === '/' || path === '/shop' ? 'text-secondary group-hover:text-white' : ' text-text group-hover:text-primary'} transition-all`}/>
-                }
               </li>
             ))
           }

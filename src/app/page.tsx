@@ -12,7 +12,7 @@ import discountBanner from "@/assets/images/Discount-Bannar.webp";
 import PromotionBanners from "@/components/(home)/PromotionBanners";
 import Brands from "@/components/(home)/Brands";
 import News from "@/components/(home)/News";
-import Testimonials from "@/components/(home)/Testimonials";
+import Testimonials from "@/components/Testimonials";
 
 export default function Home() {
   return (

@@ -30,7 +30,6 @@ const ProductsList = () => {
       ...ShopProducts,
     ]
     const {showProduct} = useContext(ProductContext)
-    console.log(showProduct)
     const [page,setPage] = useState<number>(1)
     const pagesCount = Math.ceil(products.length / showProduct)
     const [totalPage,setTotalPage] = useState<number>(pagesCount)

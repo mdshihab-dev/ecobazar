@@ -5,13 +5,16 @@ import ArrowRightIcon from "@/assets/icons/ArrowRightIcon";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { Navigation } from "swiper/modules";
-import TestimonialCard from "./TestimonialCard";
+import TestimonialCard from "@/components/TestimonialCard";
 import clint1 from "@/assets/images/robert-fox.webp";
 import clint2 from "@/assets/images/russel.webp";
 import clint3 from "@/assets/images/pena.webp";
+import { usePathname } from "next/navigation";
 const Testimonials = () => {
+  const pathname = usePathname()
+  console.log(pathname)
   return (
-    <section className="  py-15 bg-[#f2f2f2]">
+    <section className={`  ${pathname === '/' ? ' py-15' : ' py-25'} bg-[#f2f2f2]`}>
       <div className="container">
         <div className=" flex items-center justify-between">
           <h2 className=" font-poppins font-semibold leading-[120%] text-[32px] text-dark">
@@ -28,7 +31,7 @@ const Testimonials = () => {
           </div>
         </div>
 
-        <div className=" mt-8">
+        <div className={`${pathname === '/' ? 'mt-8' : ' mt-12.5'}`}>
           <Swiper
             modules={[Navigation]}
             navigation={{

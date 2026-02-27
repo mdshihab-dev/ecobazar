@@ -21,7 +21,6 @@ const SaleTimer = () => {
     })
 
     useEffect(()=>{
-        console.log(path)
         const timer = setInterval(()=>{
                 const deadline = new Date('December 31, 2026 11:59:59 PM +06').getTime()
                 const currentTime = new Date().getTime()

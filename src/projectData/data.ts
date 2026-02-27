@@ -39,6 +39,13 @@ import JacobJones from '@/assets/images/jacob-jones.png'
 import RalphEdwords from '@/assets/images/ralph-edwards.png'
 // ===========================================================
 
+import Leaf from '@/assets/images/leaf.png'
+import Headphone from '@/assets/images/headphone.png'
+import ShoppingBag from '@/assets/images/shopping-bag.png'
+import Delivery from '@/assets/images/delivery.png'
+import Package from '@/assets/images/package.png'
+import Star from '@/assets/images/star.png'
+
 interface ProductType {
     imgSrc: StaticImageData,
     alt: string,
@@ -612,4 +619,54 @@ export const RelatedProductsData:ProductType[] = [
         price: 14.99,
         discount: false,
     },
+]
+
+// ================================================
+
+// For About us page 
+
+interface FeatureItemType {
+    image: StaticImageData,
+    alt: string,
+    title: string,
+    paragraph: string
+}
+
+export const FeatureItemData: FeatureItemType[] = [
+  {
+    image: Leaf,
+    alt: 'leaf image' ,
+    title: '100% Organic food',
+    paragraph: '100% healthy & Fresh food.',
+  },
+  {
+    image: Headphone ,
+    alt: 'headphone image',
+    title: 'Great Support 24/7',
+    paragraph: 'Instant access to Contact',
+  },
+  {
+    image: Star,
+    alt: 'star image',
+    title: 'Customer Feedback',
+    paragraph: 'Our happy customer',
+  },
+  {
+    image: ShoppingBag,
+    alt: 'Shopping Bag image' ,
+    title: '100% Sucure Payment',
+    paragraph: 'We ensure your money is save',
+  },
+  {
+    image: Delivery ,
+    alt: 'delivery image',
+    title: 'Free Shipping',
+    paragraph: 'Free shipping with discount',
+  },
+  {
+    image: Package,
+    alt: 'package image',
+    title: '100% Organic Food',
+    paragraph: '100% healthy & Fresh food.',
+  }
 ]
