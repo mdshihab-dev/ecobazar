@@ -32,7 +32,7 @@ const Pagination = ({currentPage,totalPages,pageChanger}:PropsType) => {
   return (
     <div className=" mb-20 flex justify-center">
         <div className=" flex items-center justify-center gap-x-3">
-            <button disabled={currentPage === 1}  onClick={()=> pageChanger(currentPage - 1)} className={`${currentPage === 1 ? 'bg-[#F2F2F2] border-transparent' : 'bg-white'} cursor-pointer flex items-center justify-center w-9 h-9 rounded-full border border-[#e6e6e6]`}>
+            <button disabled={currentPage === 1}  onClick={()=> pageChanger(currentPage - 1)} className={`${currentPage === 1 ? 'bg-[#F2F2F2] border-transparent cursor-no-drop' : 'bg-white cursor-pointer'} flex items-center justify-center w-9 h-9 rounded-full border border-[#e6e6e6]`}>
                 <MdArrowBackIosNew className={`${currentPage === 1 ? 'text-[#BDBDBD]' : 'text-dark'}`}/>
             </button>
 
@@ -44,7 +44,7 @@ const Pagination = ({currentPage,totalPages,pageChanger}:PropsType) => {
               })  
             }
 
-            <button disabled={currentPage === totalPages} onClick={()=> pageChanger(currentPage + 1)} className={`${currentPage === totalPages ? 'bg-[#F2F2F2] border-transparent' : 'bg-white'} cursor-pointer flex items-center justify-center w-9 h-9 rounded-full border border-[#e6e6e6]`}>
+            <button disabled={currentPage === totalPages} onClick={()=> pageChanger(currentPage + 1)} className={`${currentPage === totalPages ? 'bg-[#F2F2F2] border-transparent cursor-no-drop' : 'bg-white cursor-pointer'} flex items-center justify-center w-9 h-9 rounded-full border border-[#e6e6e6]`}>
                 <MdArrowForwardIos className={`${currentPage === totalPages ? 'text-[#BDBDBD]' : 'text-dark'}`}/>
             </button>
         </div>

@@ -45,6 +45,8 @@ import ShoppingBag from '@/assets/images/shopping-bag.png'
 import Delivery from '@/assets/images/delivery.png'
 import Package from '@/assets/images/package.png'
 import Star from '@/assets/images/star.png'
+// ============================================================
+
 
 interface ProductType {
     imgSrc: StaticImageData,
@@ -670,3 +672,4 @@ export const FeatureItemData: FeatureItemType[] = [
     paragraph: '100% healthy & Fresh food.',
   }
 ]
+

@@ -1,6 +1,7 @@
 import AboutSection from "@/components/(about)/AboutSection"
 import DeliverySection from "@/components/(about)/DeliverySection"
 import FeatureSection from "@/components/(about)/FeatureSection"
+import TeamSection from "@/components/(about)/TeamSection"
 import SubBanner from "@/components/SubBanner"
 import Testimonials from "@/components/Testimonials"
 
@@ -15,6 +16,7 @@ const AboutPage = () => {
       <AboutSection/>
       <FeatureSection/>
       <DeliverySection/>
+      <TeamSection/>
       <Testimonials/>
     </>
   )

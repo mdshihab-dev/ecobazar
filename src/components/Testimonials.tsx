@@ -12,7 +12,6 @@ import clint3 from "@/assets/images/pena.webp";
 import { usePathname } from "next/navigation";
 const Testimonials = () => {
   const pathname = usePathname()
-  console.log(pathname)
   return (
     <section className={`  ${pathname === '/' ? ' py-15' : ' py-25'} bg-[#f2f2f2]`}>
       <div className="container">
