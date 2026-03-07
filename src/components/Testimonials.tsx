@@ -46,51 +46,27 @@ const Testimonials = () => {
             }}
           >
             <SwiperSlide>
-              <TestimonialCard
-                imageSrc={clint1}
-                alt="Robert Fox"
-                name="Robert Fox"
-              />
+              <TestimonialCard imageSrc={clint1} alt="Robert Fox" name="Robert Fox"/>
             </SwiperSlide>
 
             <SwiperSlide>
-              <TestimonialCard
-                imageSrc={clint2}
-                alt="Dianne Russell"
-                name="Dianne Russell"
-              />
+              <TestimonialCard imageSrc={clint2} alt="Dianne Russell" name="Dianne Russell"/>
             </SwiperSlide>
 
             <SwiperSlide>
-              <TestimonialCard
-                imageSrc={clint3}
-                alt="Eleanor Pena"
-                name="Eleanor Pena"
-              />
+              <TestimonialCard imageSrc={clint3} alt="Eleanor Pena" name="Eleanor Pena"/>
             </SwiperSlide>
 
             <SwiperSlide>
-              <TestimonialCard
-                imageSrc={clint1}
-                alt="Robert Fox"
-                name="Robert Fox"
-              />
+              <TestimonialCard imageSrc={clint1} alt="Robert Fox" name="Robert Fox"/>
             </SwiperSlide>
 
             <SwiperSlide>
-              <TestimonialCard
-                imageSrc={clint2}
-                alt="Dianne Russell"
-                name="Dianne Russell"
-              />
+              <TestimonialCard imageSrc={clint2} alt="Dianne Russell" name="Dianne Russell"/>
             </SwiperSlide>
 
             <SwiperSlide>
-              <TestimonialCard
-                imageSrc={clint3}
-                alt="Eleanor Pena"
-                name="Eleanor Pena"
-              />
+              <TestimonialCard imageSrc={clint3} alt="Eleanor Pena" name="Eleanor Pena"/>
             </SwiperSlide>
           </Swiper>
         </div>

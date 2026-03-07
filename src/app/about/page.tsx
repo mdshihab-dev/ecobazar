@@ -1,3 +1,4 @@
+import AboutBrands from "@/components/(about)/AboutBrands"
 import AboutSection from "@/components/(about)/AboutSection"
 import DeliverySection from "@/components/(about)/DeliverySection"
 import FeatureSection from "@/components/(about)/FeatureSection"
@@ -18,6 +19,7 @@ const AboutPage = () => {
       <DeliverySection/>
       <TeamSection/>
       <Testimonials/>
+      <AboutBrands/>
     </>
   )
 }
