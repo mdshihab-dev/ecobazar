@@ -14,10 +14,10 @@ const TeamMemberPagination = () => {
   return (
     <div  className=" relative mt-12.5">
         <div className="absolute top-1/2 left-0 z-50 bg-amber-500 w-full -translate-y-1/2 flex items-center justify-between">
-          <span className="testimonial-prev absolute -left-15 cursor-pointer h-[45px] w-[45px] flex items-center justify-center border border-[#e6e6e6] bg-white rounded-full text-dark transition-colors duration-500 hover:border-primary hover:bg-primary hover:text-white">
+          <span className="testimonial-before absolute -left-15 cursor-pointer h-[45px] w-[45px] flex items-center justify-center border border-[#e6e6e6] bg-white rounded-full text-dark transition-colors duration-500 hover:border-primary hover:bg-primary hover:text-white">
             <ArrowLeftIcon />
           </span>
-          <span className="testimonial-next absolute -right-15 cursor-pointer h-[45px] w-[45px] flex items-center justify-center border border-[#e6e6e6] bg-white rounded-full text-dark transition-colors duration-500 hover:border-primary hover:bg-primary hover:text-white">
+          <span className="testimonial-after absolute -right-15 cursor-pointer h-[45px] w-[45px] flex items-center justify-center border border-[#e6e6e6] bg-white rounded-full text-dark transition-colors duration-500 hover:border-primary hover:bg-primary hover:text-white">
             <ArrowRightIcon />
           </span>
         </div>
@@ -28,8 +28,8 @@ const TeamMemberPagination = () => {
           spaceBetween={24}
           loop={true}
           navigation={{
-            prevEl: ".testimonial-prev",
-            nextEl: ".testimonial-next",
+            prevEl: ".testimonial-before",
+            nextEl: ".testimonial-after",
           }}
           breakpoints={{
               0: { slidesPerView: 1 },

@@ -47,6 +47,31 @@ import Package from '@/assets/images/package.png'
 import Star from '@/assets/images/star.png'
 // ============================================================
 
+import GalleryImg1 from '@/assets/images/gallery-images/gallery-img1.webp'
+import GalleryImg2 from '@/assets/images/gallery-images/gallery-img2.webp'
+import GalleryImg3 from '@/assets/images/gallery-images/gallery-img3.webp'
+import GalleryImg4 from '@/assets/images/gallery-images/gallery-img4.webp'
+import GalleryImg5 from '@/assets/images/gallery-images/gallery-img5.webp'
+import GalleryImg6 from '@/assets/images/gallery-images/gallery-img6.webp'
+import GalleryImg7 from '@/assets/images/gallery-images/gallery-img7.webp'
+import GalleryImg8 from '@/assets/images/gallery-images/gallery-img8.webp'
+// ============================================================
+
+import RecentlyBlogImg1 from '@/assets/images/recently-added-img1.webp'
+import RecentlyBlogImg2 from '@/assets/images/recently-added-img2.webp'
+import RecentlyBlogImg3 from '@/assets/images/recently-added-img3.webp'
+// ============================================================
+
+import BlogImg1 from '@/assets/images/blogs-images/blog-img1.webp'
+import BlogImg2 from '@/assets/images/blogs-images/blog-img2.webp'
+import BlogImg3 from '@/assets/images/blogs-images/blog-img3.webp'
+import BlogImg4 from '@/assets/images/blogs-images/blog-img4.webp'
+import BlogImg5 from '@/assets/images/blogs-images/blog-img5.webp'
+import BlogImg6 from '@/assets/images/blogs-images/blog-img6.webp'
+import BlogImg7 from '@/assets/images/blogs-images/blog-img7.webp'
+import BlogImg8 from '@/assets/images/blogs-images/blog-img8.webp'
+import BlogImg9 from '@/assets/images/blogs-images/blog-img9.webp'
+import BlogImg10 from '@/assets/images/blogs-images/blog-img10.webp'
 
 interface ProductType {
     imgSrc: StaticImageData,
@@ -673,3 +698,152 @@ export const FeatureItemData: FeatureItemType[] = [
   }
 ]
 
+// For Blog list page 
+
+interface TopCatagoriesType {
+    catagoryItem: string,
+    avaiable: number
+}
+
+export const TopCatagoriesData: TopCatagoriesType[] = [
+    {
+        catagoryItem: 'Fresh Fruit',
+        avaiable: 134
+    },
+    {
+        catagoryItem: 'Vegetables',
+        avaiable: 150
+    },
+    {
+        catagoryItem: 'Cooking',
+        avaiable: 54
+    },
+    {
+        catagoryItem: 'Snacks',
+        avaiable: 47
+    },
+    {
+        catagoryItem: 'Beverages',
+        avaiable: 43
+    },
+    {
+        catagoryItem: 'Beauty & Health',
+        avaiable: 38
+    },
+    {
+        catagoryItem: 'Bread & Bakery',
+        avaiable: 15
+    },
+]
+
+export const PopulerTagsData: string[] = ['Healthy','Low fat','Vegetarian','Bread','Kid foods','Vitamins','Snacks','Tiffin','Meat','Launch','Dinner']
+
+interface OurGalleryType {
+    imgSrc: StaticImageData,
+    alt: string
+}
+
+export const OurGalleryData: OurGalleryType[] = [
+    {
+        imgSrc: GalleryImg1,
+        alt: 'gallery image 1'
+    },
+    {
+        imgSrc: GalleryImg2,
+        alt: 'gallery image 2'
+    },
+    {
+        imgSrc: GalleryImg3,
+        alt: 'gallery image 3'
+    },
+    {
+        imgSrc: GalleryImg4,
+        alt: 'gallery image 4'
+    },
+    {
+        imgSrc: GalleryImg5,
+        alt: 'gallery image 5'
+    },
+    {
+        imgSrc: GalleryImg6,
+        alt: 'gallery image 6'
+    },
+    {
+        imgSrc: GalleryImg7,
+        alt: 'gallery image 7'
+    },
+    {
+        imgSrc: GalleryImg8,
+        alt: 'gallery image 8'
+    },
+]
+
+interface RecentlyAddedBlogType extends OurGalleryType{
+        title: string
+}
+
+export const RecentlyAddedBlogData: RecentlyAddedBlogType[] = [
+    {
+        imgSrc: RecentlyBlogImg1,
+        alt: "Recent blog image 1",
+        title: 'Curabitur porttitor orci eget nequ accumsan.'
+    },
+    {
+        imgSrc: RecentlyBlogImg2,
+        alt: "Recent blog image 2",
+        title: 'Donec mattis arcu faucibus suscipit viverra.'
+    },
+    {
+        imgSrc: RecentlyBlogImg3,
+        alt: "Recent blog image 3",
+        title: 'Quisque posuere tempus rutrum. Integer velit ex.'
+    },
+]
+
+interface BlogImagesType {
+    imgSrc: StaticImageData,
+    alt: string
+}
+
+export const BlogImagesData: BlogImagesType[] = [
+    {
+        imgSrc: BlogImg1,
+        alt: 'blog 1'
+    },
+    {
+        imgSrc: BlogImg2,
+        alt: 'blog 2'
+    },
+    {
+        imgSrc: BlogImg3,
+        alt: 'blog 3'
+    },
+    {
+        imgSrc: BlogImg4,
+        alt: 'blog 4'
+    },
+    {
+        imgSrc: BlogImg5,
+        alt: 'blog 5'
+    },
+    {
+        imgSrc: BlogImg6,
+        alt: 'blog 6'
+    },
+    {
+        imgSrc: BlogImg7,
+        alt: 'blog 7'
+    },
+    {
+        imgSrc: BlogImg8,
+        alt: 'blog 8'
+    },
+    {
+        imgSrc: BlogImg9,
+        alt: 'blog 9'
+    },
+    {
+        imgSrc: BlogImg10,
+        alt: 'blog 10'
+    }
+]

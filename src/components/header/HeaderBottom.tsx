@@ -17,10 +17,10 @@ interface NavType {
       navRoute: "/shop",
       navName: "Shop",
     },
-    {
-      navRoute: "/pages",
-      navName: "Pages",
-    },
+    // {
+    //   navRoute: "/pages",
+    //   navName: "Pages",
+    // },
     {
       navRoute: "/blogs",
       navName: "Blog",
