@@ -19,14 +19,14 @@ interface ProductDataType {
 
 const PopulerDeals = ({ heading, products } :ProductDataType) => {
   return (
-    <section className=" container">
+    <section className=" container px-2 md:px-3 lg:px-0">
         <div className=" flex justify-between items-center">
-            <h3 className="font-poppins font-semibold text-[32px] leading-[120%] text-dark">
+            <h3 className="font-poppins font-semibold text-xl sm:text-2xl md:text-3xl lg:text-[32px] leading-[120%] text-dark">
                 {heading}
             </h3>
 
             <div className=" flex items-center justify-center gap-x-3">
-                <Link href={'#'} className="font-poppins text-primary font-medium text-base leading-[150%]">
+                <Link href={'#'} className="font-poppins text-primary font-medium text-sm md:text-base leading-[150%]">
                     View All
                 </Link>
                 <span className=" text-[#00B307]">

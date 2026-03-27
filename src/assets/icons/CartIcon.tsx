@@ -2,9 +2,7 @@
 const CartIcon = () => {
   return (
     <svg
-  width={37}
-  height={37}
-  className=" cursor-pointer"
+  className=" cursor-pointer h-7 w-7 md:h-[37px] md:w-[37px]"
   viewBox="0 0 37 37"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"

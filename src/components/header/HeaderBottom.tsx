@@ -39,7 +39,7 @@ interface NavType {
 const HeaderBottom = () => {
   const path = usePathname()
   return (
-    <section className={`${path === '/' || path === '/shop' ? ' bg-dark-primary' : 'bg-white border-t border-[#e6e6e6]'} py-4`}>
+    <section className={`${path === '/' || path === '/shop' ? ' bg-dark-primary' : 'bg-white border-t border-[#e6e6e6]'} py-4 hidden md:flex md:px-3`}>
       <div className=" container flex justify-between">
 
         <ul className=" flex items-center gap-x-8">

@@ -34,7 +34,7 @@ const HeaderDropDown = () => {
   },[])
 
   return (
-     <div className=' flex items-center justify-center gap-x-5'>
+     <div className=' flex items-center justify-center gap-x-2.5 md:gap-x-5'>
              {/* currency  drop down*/}
              <div ref={languageRef} className='relative'>
               <div onClick={()=> setLangOpen(!langOpen)} className='  cursor-pointer flex items-center justify-center gap-x-1.5'>
@@ -44,7 +44,7 @@ const HeaderDropDown = () => {
 
                 {langOpen &&
                 (
-                <div  className=' z-50 absolute bg-white top-6 -left-2 inline-block shadow transition-all font-poppins text-sm font-normal leading-[130%] text-text border border-[#e6e6e6] [&>div]:px-2.5 [&>div]:py-1 [&>div]:border-b [&>div]:border-[#e6e6e6] [&>div]:last:border-b-transparent [&>div]:hover:bg-[#ddd] [&>div]:cursor-pointer '>
+                <div  className=' z-50 rounded-[6px] overflow-hidden absolute bg-white top-6 -left-4 inline-block shadow transition-all font-poppins text-sm font-normal leading-[130%] text-text border border-[#e6e6e6] [&>div]:px-4 [&>div]:py-1 [&>div]:border-b [&>div]:border-[#e6e6e6] [&>div]:last:border-b-transparent [&>div]:hover:bg-[#ddd] [&>div]:cursor-pointer '>
                   {language.map((item,index) => 
                       <div onClick={()=> { setSelectedLang(index) ; setLangOpen(false)}} key={index}>{item}</div>
                     )}
@@ -63,7 +63,7 @@ const HeaderDropDown = () => {
 
                 {currncyOpen &&
                 (
-                <div  className=' z-50 absolute bg-white top-6 -left-1 inline-block shadow transition-all font-poppins text-sm font-normal leading-[130%] text-text border border-[#e6e6e6] [&>div]:border-b [&>div]:border-[#e6e6e6] [&>div]:last:border-b-transparent [&>div]:px-2.5 [&>div]:py-1 [&>div]:hover:bg-[#ddd] [&>div]:cursor-pointer '>
+                <div  className=' z-50 absolute bg-white top-6 -left-1 inline-block rounded-[6px] overflow-hidden shadow transition-all font-poppins text-sm font-normal leading-[130%] text-text border border-[#e6e6e6] [&>div]:border-b [&>div]:border-[#e6e6e6] [&>div]:last:border-b-transparent [&>div]:px-4 [&>div]:py-1 [&>div]:hover:bg-[#ddd] [&>div]:cursor-pointer '>
                   {currency.map((item,index) => 
                       <div onClick={()=> { setSelectedCurrency(index) ; setCurrencyOpen(false)}} key={index}>{item}</div>
                     )}

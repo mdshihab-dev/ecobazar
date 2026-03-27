@@ -17,6 +17,12 @@ import RedChili from '@/assets/images/red-chili-big.webp'
 import Cucumber from '@/assets/images/cucumber.webp'
 // ================================================
 
+import ServiceImage1 from '@/assets/images/delivery.png'
+import ServiceImage2 from '@/assets/images/headphone.png'
+import ServiceImage3 from '@/assets/images/shopping-bag.png'
+import ServiceImage4 from '@/assets/images/package.png'
+// ================================================
+
 import img1 from '@/assets/images/catagories-images/image1.webp'
 import img2 from '@/assets/images/catagories-images/image2.webp'
 import img3 from '@/assets/images/catagories-images/image3.webp'
@@ -379,6 +385,41 @@ export const FeaturedProducts: ProductType[] = [
 ]
 
 
+// ========================================================
+// Service data
+interface ServiceDataType {
+    imgSrc: StaticImageData,
+    alt: string
+    title: string,
+    description: string
+}
+
+export const ServiceData: ServiceDataType[] = [
+    {
+        imgSrc: ServiceImage1,
+        alt: 'Shipping',
+        title: 'Free Shipping',
+        description: 'Free shipping on all your order'
+    },
+    {
+        imgSrc: ServiceImage2,
+        alt: 'Support',
+        title: 'Customer Support 24/7',
+        description: 'Instant access to Support'
+    },
+    {
+        imgSrc: ServiceImage3,
+        alt: 'Payment',
+        title: '100% Secure Payment',
+        description: 'We ensure your money is save'
+    },
+    {
+        imgSrc: ServiceImage4,
+        alt: 'Guarantee',
+        title: 'Money-Back Guarantee',
+        description: '30 Days Money-Back Guarantee'
+    },
+]
 // ========================================================
 
 

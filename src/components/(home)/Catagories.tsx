@@ -6,14 +6,14 @@ import { CatagoriesData } from "@/projectData/data"
 
 const Catagories = () => {
   return (
-    <section className=" container py-15">
+    <section className=" container px-2 md:px-3 lg:px-0 py-6 md:py-10 lg:py-15">
         <div className=" flex justify-between items-center">
-            <h3 className="font-poppins font-semibold text-[32px] leading-[120%] text-dark">
+            <h3 className="font-poppins font-semibold text-xl sm:text-2xl md:text-3xl lg:text-[32px] leading-[120%] text-dark">
                 Popular Categories
             </h3>
 
             <div className=" flex items-center justify-center gap-x-3">
-                <Link href={'#'} className=" text-primary font-poppins font-medium text-base leading-[150%]">
+                <Link href={'#'} className=" text-primary font-poppins font-medium text-sm md:text-base leading-[150%]">
                     View All
                 </Link>
                 <span className=" text-[#00B307]">
@@ -22,7 +22,7 @@ const Catagories = () => {
             </div>
         </div>
 
-        <div className=" mt-8 flex gap-6 flex-wrap">
+        <div className=" mt-4 md:mt-6 lg:mt-8 flex max-sm:justify-center max-sm:items-center gap-2 md:gap-4 lg:gap-6 flex-wrap">
             {
             CatagoriesData.map((item,index)=>{
               return  <CatagoryItem key={index} imgSrc={item.imgSrc} alt={item.alt} name={item.name}/>

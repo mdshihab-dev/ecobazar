@@ -15,7 +15,7 @@ const ServiceItem = ({imgSrc,title,description,alt}:ServiceData) => {
             <h4 className='font-poppins font-semibold text-base leading-[120%] text-dark'>
                 {title}
             </h4>
-            <p className='font-poppins font-normal text-[14px] leading-[150%] text-secondary'>
+            <p className='font-poppins font-normal text-sm md:text-[14px] leading-[150%] text-secondary'>
                 {description}
             </p>
         </div>

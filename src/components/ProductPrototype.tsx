@@ -20,7 +20,7 @@ const ProductPrototype = ({imgSrc, alt, name, price, oldPrice, discount}: Produc
     const path = usePathname()
 
   return (
-    <div className={`${path === '/' ? 'w-66 h-[327px] ' : 'w-78 h-[407px] rounded-lg'} overflow-hidden bg-white relative cursor-pointer transition-all duration-300 group hover:shadow-[0px_0px_15px_0px_rgba(0,0,0,0.1)] hover:border-[#2c732e] border border-[#e6e6e6] flex flex-col justify-between `}>
+    <div className={`${path === '/' ? 'w-66 h-[327px] ' : 'w-78 h-[407px] rounded-lg'} max-xl:grow overflow-hidden bg-white relative cursor-pointer transition-all duration-300 group hover:shadow-[0px_0px_15px_0px_rgba(0,0,0,0.1)] hover:border-[#2c732e] border border-[#e6e6e6] flex flex-col justify-between `}>
 
         {discount &&
             <span className=" absolute top-4 left-4 z-30 flex items-center justify-center font-poppins text-[14px] leading-[150%] font-normal text-white w-20 h-[27px] bg-danger rounded">Sale 50%</span>

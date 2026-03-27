@@ -24,18 +24,21 @@ export default function Home() {
         <PopulerDeals heading="Popular Products" products={PopulerProducts} />
       </div>
 
-      <PromotionBanners />
+      {/* <PromotionBanners />
       <div className=" bg-light-blue py-15">
         <PopulerDeals heading="Hot Deals" products={HotDeals} />
-      </div>
+      </div> */}
 
-      <div className="container py-15">
+      {/* <div className="container py-15">
         <Image src={discountBanner} alt="discount banner" />
-      </div>
-      <PopulerDeals heading="Featured Products" products={FeaturedProducts} />
-      <News />
-      <Testimonials />
-      <Brands />
+      </div> */}
+
+      {/* <PopulerDeals heading="Featured Products" products={FeaturedProducts} />
+      <News /> */}
+
+      {/* <Testimonials /> */}
+      {/*  */}
+      {/* <Brands /> */}
     </>
   );
 }
