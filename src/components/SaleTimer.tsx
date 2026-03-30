@@ -54,7 +54,7 @@ const SaleTimer = () => {
 
 
   return (
-    <div className=" flex items-start">
+    <div className=" flex items-start scale-75 md:scale-90 xl:scale-100">
             <div className=" flex justify-center flex-col gap-1">
                 <span className={` font-poppins font-normal text-2xl leading-[150%] ${path === "/shop" ? "text-primary" : "text-white"} `}> {time.days} </span>
                 <span className=" font-poppins font-normal text-sm leading-[100%] tracking-[3%] text-white"> Days </span>

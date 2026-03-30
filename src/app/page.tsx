@@ -20,25 +20,24 @@ export default function Home() {
       <Banner />
       <Services />
       <Catagories />
-      <div className=" pb-15">
+      <div className="pb-8 md:pb-10 lg:pb-15">
         <PopulerDeals heading="Popular Products" products={PopulerProducts} />
       </div>
 
-      {/* <PromotionBanners />
-      <div className=" bg-light-blue py-15">
+      <PromotionBanners />
+      <div className=" bg-light-blue py-8 md:py-10 lg:py-15">
         <PopulerDeals heading="Hot Deals" products={HotDeals} />
-      </div> */}
+      </div>
 
-      {/* <div className="container py-15">
+      <div className="container px-2 sm:px-3 xl:px-0 py-8 md:py-10 lg:py-15">
         <Image src={discountBanner} alt="discount banner" />
-      </div> */}
+      </div>
 
-      {/* <PopulerDeals heading="Featured Products" products={FeaturedProducts} />
-      <News /> */}
+      <PopulerDeals heading="Featured Products" products={FeaturedProducts} />
+      <News />
 
-      {/* <Testimonials /> */}
-      {/*  */}
-      {/* <Brands /> */}
+      <Testimonials />
+      <Brands />
     </>
   );
 }

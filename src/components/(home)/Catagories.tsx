@@ -6,7 +6,7 @@ import { CatagoriesData } from "@/projectData/data"
 
 const Catagories = () => {
   return (
-    <section className=" container px-2 md:px-3 lg:px-0 py-6 md:py-10 lg:py-15">
+    <section className=" container px-2 md:px-3  xl:px-0 py-6 md:py-10 lg:py-15">
         <div className=" flex justify-between items-center">
             <h3 className="font-poppins font-semibold text-xl sm:text-2xl md:text-3xl lg:text-[32px] leading-[120%] text-dark">
                 Popular Categories

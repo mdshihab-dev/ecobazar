@@ -9,7 +9,7 @@ interface PropsType {
 
 const TestimonialCard = ({imageSrc, alt, name} : PropsType) => {
   return (
-    <div className=" p-6 box-border bg-white rounded-lg w-106">
+    <div className=" p-4 md:p-6 box-border bg-white rounded-lg w-auto lg:w-106">
         <Image src={qouteImg} alt='qoute image'/>
         <p className=' max-w-[376px] my-4 font-poppins text-[14px] font-normal leading-[150%] text-sub-secondary'>
             Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna dictum, bibendum cursus velit sodales. Donec sed neque eget

@@ -19,7 +19,7 @@ interface ProductDataType {
 
 const PopulerDeals = ({ heading, products } :ProductDataType) => {
   return (
-    <section className=" container px-2 md:px-3 lg:px-0">
+    <section className=" container px-2 md:px-3 xl:px-0">
         <div className=" flex justify-between items-center">
             <h3 className="font-poppins font-semibold text-xl sm:text-2xl md:text-3xl lg:text-[32px] leading-[120%] text-dark">
                 {heading}
@@ -35,7 +35,7 @@ const PopulerDeals = ({ heading, products } :ProductDataType) => {
             </div>
         </div>
 
-        <div className=" mt-8 flex flex-wrap ">
+        <div className=" mt-4 sm:mt-6 md:mt-8 flex flex-wrap md:space-x-3 md:space-y-3 lg:space-x-0 lg:space-y-0 ">
             {
                 products.map((item,index)=>{
                     return <ProductPrototype key={index} imgSrc={item.imgSrc} alt={item.alt} name={item.name} price={item.price} oldPrice={item.oldPrice} discount={item.discount}/>

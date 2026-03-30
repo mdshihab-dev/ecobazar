@@ -13,18 +13,18 @@ import { usePathname } from "next/navigation";
 const Testimonials = () => {
   const pathname = usePathname()
   return (
-    <section className={`  ${pathname === '/' ? ' py-15' : ' py-25'} bg-[#f2f2f2]`}>
+    <section className={`  ${pathname === '/' ? ' py-8 md:py-10 lg:py-15' : ' py-25'} bg-[#f2f2f2] px-2 md:px-3 xl:px-0`}>
       <div className="container">
         <div className=" flex items-center justify-between">
-          <h2 className=" font-poppins font-semibold leading-[120%] text-[32px] text-dark">
+          <h2 className=" font-poppins font-semibold leading-[120%] text-xl md:text-2xl lg:text-3xl xl:text-[32px] text-dark">
             Client Testimonials
           </h2>
 
           <div className=" flex items-center gap-x-3">
-            <span className="testimonial-prev cursor-pointer h-[45px] w-[45px] flex items-center justify-center border border-[#e6e6e6] bg-white rounded-full text-dark transition-colors duration-500 hover:border-primary hover:bg-primary hover:text-white">
+            <span className="testimonial-prev cursor-pointer size-8 md:size-[45px] flex items-center justify-center border border-[#e6e6e6] bg-white rounded-full text-dark transition-colors duration-500 hover:border-primary hover:bg-primary hover:text-white">
               <ArrowLeftIcon />
             </span>
-            <span className="testimonial-next cursor-pointer h-[45px] w-[45px] flex items-center justify-center border border-[#e6e6e6] bg-white rounded-full text-dark transition-colors duration-500 hover:border-primary hover:bg-primary hover:text-white">
+            <span className="testimonial-next cursor-pointer size-8 md:size-[45px] flex items-center justify-center border border-[#e6e6e6] bg-white rounded-full text-dark transition-colors duration-500 hover:border-primary hover:bg-primary hover:text-white">
               <ArrowRightIcon />
             </span>
           </div>

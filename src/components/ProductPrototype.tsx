@@ -20,10 +20,10 @@ const ProductPrototype = ({imgSrc, alt, name, price, oldPrice, discount}: Produc
     const path = usePathname()
 
   return (
-    <div className={`${path === '/' ? 'w-66 h-[327px] ' : 'w-78 h-[407px] rounded-lg'} max-xl:grow overflow-hidden bg-white relative cursor-pointer transition-all duration-300 group hover:shadow-[0px_0px_15px_0px_rgba(0,0,0,0.1)] hover:border-[#2c732e] border border-[#e6e6e6] flex flex-col justify-between `}>
+    <div className={`${path === '/' ? 'w-1/2 md:w-66 h-auto md:h-[327px] ' : 'w-78 h-[407px] rounded-lg'} scale-[98%] md:scale-100 max-2xl:grow overflow-hidden bg-white relative cursor-pointer transition-all duration-300 group hover:shadow-[0px_0px_15px_0px_rgba(0,0,0,0.1)] hover:border-[#2c732e] border border-[#e6e6e6] flex flex-col justify-between `}>
 
         {discount &&
-            <span className=" absolute top-4 left-4 z-30 flex items-center justify-center font-poppins text-[14px] leading-[150%] font-normal text-white w-20 h-[27px] bg-danger rounded">Sale 50%</span>
+            <span className=" absolute top-2 md:top-4 left-2 md:left-4 z-30 flex items-center justify-center font-poppins text-xs md:text-[14px] leading-[150%] font-normal text-white w-20 h-[27px] bg-danger rounded">Sale 50%</span>
         }
         
         <div className={`${path === '/' ? '' : 'w-[312px] h-[312px] items-center'} flex justify-center relative `}>
@@ -39,15 +39,15 @@ const ProductPrototype = ({imgSrc, alt, name, price, oldPrice, discount}: Produc
           </div>
         </div>
 
-        <div className="p-3 flex items-center justify-between">
+        <div className="p-2 md:p-3 flex items-center justify-between">
             <div>
-                <h4 className=" font-poppins text-[14px] font-normal leading-[150%] text-sub-secondary">
+                <h4 className=" font-poppins whitespace-nowrap text-xs md:text-[14px] font-normal leading-[150%] text-sub-secondary">
                     {name}
                 </h4>
-                <span className="font-poppins text-base font-medium leading-[150%] text-dark">
+                <span className="font-poppins text-sm md:text-base font-medium leading-[150%] text-dark">
                   ${price.toFixed(2)}
                 </span>
-                {oldPrice && <span className="font-poppins text-base font-normal leading-[150%] text-secondary line-through ml-1">
+                {oldPrice && <span className="font-poppins text-sm md:text-base font-normal leading-[150%] text-secondary line-through ml-1">
                     ${oldPrice.toFixed(2)}
                 </span>}
                 <Image src={Rating} alt="rating" className=" mt-1.5"/>
