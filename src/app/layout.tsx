@@ -23,7 +23,7 @@ export default function RootLayout({ children}: Readonly<{ children: React.React
         <MainContext>
         <Header/>
         {children}
-        {/* <Footer/> */}
+        <Footer/>
         </MainContext>
       </body>
     </html>

@@ -14,22 +14,22 @@ const icons : IconType[] = [
 
 const FooterTop = () => {
   return (
-    <section className=" bg-light-blue py-10">
-      <div className=" container flex items-center justify-between">
-          <div className=" max-w-md">
-            <h2 className="font-poppins font-semibold text-2xl leading-[150%] text-dark">
+    <section className=" bg-light-blue px-2 md:px-0 py-5 md:py-8 lg:py-10">
+      <div className=" container flex flex-col md:flex-row items-center justify-between">
+          <div className=" max-w-md text-center md:text-start">
+            <h2 className="font-poppins font-semibold text-xl md:text-2xl leading-[150%] text-dark">
               Subcribe our Newsletter
             </h2>
-            <p className=" mt-1 font-poppins font-normal text-[14px] leading-[150%] text-secondary">
+            <p className=" mt-1 px-5 md:px-0 font-poppins font-normal text-[14px] leading-[150%] text-secondary">
               Pellentesque eu nibh eget mauris congue mattis mattis nec tellus. Phasellus imperdiet elit eu magna.
             </p>
           </div>
 
-          <div className=" flex items-center justify-center gap-x-10">
+          <div className=" flex flex-col md:flex-row items-center justify-center gap-x-10">
             <div>
-            <div className="w-134 flex items-center border border-[#e5e5e5] h-13 bg-white rounded-full">
-              <input type="text" placeholder="Your email address" className=" w-full py-3.5 px-6 font-normal font-poppins text-base leading-[150%] text-light-gray outline-hidden"/>
-              <Button text="Subscribe" styles=" px-10 py-4 bg-primary text-white rounded-full font-semibold text-base leading-[20px]"/>
+            <div className="w-auto md:w-134 my-3 md:my-0 flex items-center border border-[#e5e5e5] h-13 bg-white rounded-full">
+              <input type="text" placeholder="Your email address" className=" w-full py-2.5 md:py-3.5 px-3 md:px-6 font-normal font-poppins text-sm md:text-base leading-[150%] text-light-gray outline-hidden"/>
+              <Button text="Subscribe" styles=" px-6 md:px-10 py-4 bg-primary text-white rounded-full font-semibold text-sm md:text-base leading-[20px]"/>
             </div>
           </div>
 
