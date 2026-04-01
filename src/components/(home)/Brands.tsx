@@ -15,7 +15,7 @@ import instaImage6 from '@/assets/images/Instagram-Post6.webp'
 const Brands = () => {
     const images: StaticImageData[] = [instaImage1, instaImage2, instaImage3, instaImage4, instaImage5, instaImage6]
   return (
-    <section className=" container pb-8 md:pb-10 lg:pb-15">
+    <section className=" container px-2 md:px-0 pb-8 md:pb-10 lg:pb-15">
         <div className=' hidden lg:flex items-center justify-between py-15'>
             <Image src={steps} alt='Steps brand'/>
             <span className=' w-px h-8 bg-[#E6D6E6]'/>
@@ -34,9 +34,9 @@ const Brands = () => {
             <h2 className='text-center font-poppins font-semibold text-xl sm:text-2xl md:text-3xl lg:text-[32px] leading-[120%] text-dark'>
                 Follow us on Instagram
             </h2>
-            <div className='mt-4 sm:mt-6 md:mt-8 flex flex-wrap items-center justify-center gap-2 md:justify-between'>
+            <div className='mt-4 sm:mt-6 md:mt-8 flex flex-wrap items-center justify-center xl:justify-between gap-3 sm:gap-5 sm:px-7 md:gap-8 xl:gap-0 md:px-17 lg:px-35 xl:px-0  '>
                 {images.map((image, index) => (
-                    <div key={index} className=' grow md:w-auto'>
+                    <div key={index} className=' size-[160px] md:size-[180px] lg:size-[200px]'>
                         <Image  src={image} alt='instagram post'/>
                     </div>
                 ))
