@@ -10,7 +10,7 @@ const HeaderMiddle = () => {
   return (
      <section className=" container px-2 md:px-3 py-3  md:py-6 flex items-center justify-between">
 
-      <Link href={'/'} className=" w-[120px]">
+      <Link href={'/'} className=" inline-block w-[120px] sm:w-[130px] md:w-[140px] lg:w-full">
           <Image src={logo} alt="logo" />
       </Link>
 

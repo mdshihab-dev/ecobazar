@@ -34,27 +34,29 @@ const FooterData: FooterItems[] = [
 const FooterBottom = () => {
   return (
     <section className=' bg-dark'>
-      <div className="container py-15 flex">
+      <div className="container py-8 md:py-10 lg:py-15 flex flex-col lg:flex-row gap-y-10  px-2 md:px-3 xl:px-0">
         <div className=' max-w-75'>
-          <Image src={logo} alt="logo" />
-          <p className=' my-4 font-poppins font-normal text-[14px] leading-[150%] text-light-gray'>
+          <Link href={'/'} className=" inline-block w-[120px] sm:w-[130px] md:w-[140px] lg:w-full">
+            <Image src={logo} alt="logo" />
+          </Link>
+          <p className=' my-4 lg:my-4 font-poppins font-normal text-sm lg:text-[14px] leading-[150%] text-light-gray'>
             Morbi cursus porttitor enim lobortis molestie. Duis gravida turpis dui, eget bibendum magna congue nec.
           </p>
 
           <div>
-            <Link href={'tel:2195550114'} className='font-poppins text-white font-medium text-[14px] leading-[150%] relative before:absolute before:w-full before:h-[1.5px] before:bg-primary before:-bottom-1.5'>
+            <Link href={'tel:2195550114'} className='font-poppins text-white font-medium text-sm lg:text-[14px] leading-[150%] relative before:absolute before:w-full before:h-[1.5px] before:bg-primary before:-bottom-1.5'>
               (219) 555-0114
             </Link>
 
-            <span className='mx-4 font-poppins font-normal text-base leading-[150%] text-light-gray'>Or</span>
+            <span className='mx-4 font-poppins font-normal text-sm lg:text-base leading-[150%] text-light-gray'>Or</span>
 
-            <Link href={'mailto:Proxy@gmail.com'} className='font-poppins text-white font-medium text-[14px] leading-[150%] relative before:absolute before:w-full before:h-[1.5px] before:bg-primary before:-bottom-1.5'>
+            <Link href={'mailto:Proxy@gmail.com'} className='font-poppins text-white font-medium text-sm lg:text-[14px] leading-[150%] relative before:absolute before:w-full before:h-[1.5px] before:bg-primary before:-bottom-1.5'>
               Proxy@gmail.com
             </Link>
           </div>
         </div>
 
-        <div className=' flex ml-37'>
+        <div className=' flex lg:ml-37'>
           {
             FooterData.map((item, index) => (
             <div key={index} className={`${index === 1 && 'ml-32.5'} ${index === 2 && 'ml-[135px]'} ${index === 3 && 'ml-[140px]'}`}>
@@ -76,7 +78,7 @@ const FooterBottom = () => {
           }
         </div>
       </div>
-
+{/* =============================================================== */}
       <div className=' container flex items-center justify-between py-6 border-t border-dark-primary'>
           <p className='font-poppins text-[14px] font-normal leading-[150%] text-light-gray'>
             Ecobazar eCommerce © 2026. All Rights Reserved
