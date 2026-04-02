@@ -27,8 +27,8 @@ const FooterTop = () => {
 
           <div className=" flex flex-col md:flex-row items-center justify-center gap-x-10">
             <div>
-            <div className="w-auto md:w-134 my-3 md:my-0 flex items-center border border-[#e5e5e5] h-13 bg-white rounded-full">
-              <input type="text" placeholder="Your email address" className=" w-full py-2.5 md:py-3.5 px-3 md:px-6 font-normal font-poppins text-sm md:text-base leading-[150%] text-light-gray outline-hidden"/>
+            <div className=" my-3 md:my-0 flex items-center border border-[#e5e5e5] h-13 bg-white rounded-full">
+              <input type="text" placeholder="Your email address" className=" w-[60vw] md:w-134 py-2.5 md:py-3.5 px-3 md:px-6 font-normal font-poppins text-sm md:text-base leading-[150%] text-light-gray outline-hidden"/>
               <Button text="Subscribe" styles=" px-6 md:px-10 py-4 bg-primary text-white rounded-full font-semibold text-sm md:text-base leading-[20px]"/>
             </div>
           </div>
