@@ -33,7 +33,7 @@ const FooterData: FooterItems[] = [
 
 const FooterBottom = () => {
   return (
-    <section className=' bg-dark'>
+    <section className=' bg-dark px-2 md:px-3 xl:px-0'>
       <div className="container py-8 md:py-10 lg:py-15 flex flex-col lg:flex-row gap-y-10  px-2 md:px-3 xl:px-0">
         <div className=' max-w-75'>
           <Link href={'/'} className=" inline-block w-[120px] sm:w-[130px] md:w-[140px] lg:w-full">
@@ -56,18 +56,18 @@ const FooterBottom = () => {
           </div>
         </div>
 
-        <div className=' flex lg:ml-37'>
+        <div className=' flex flex-wrap space-y-5 lg:space-y-0 lg:ml-37'>
           {
             FooterData.map((item, index) => (
-            <div key={index} className={`${index === 1 && 'ml-32.5'} ${index === 2 && 'ml-[135px]'} ${index === 3 && 'ml-[140px]'}`}>
-              <h4 className=' font-medium font-poppins text-base leading-[150%] text-white mb-5'>
+            <div key={index} className={`${index === 1 && 'ml-16 lg:ml-32.5'} ${index === 2 && 'lg:ml-[135px]'} ${index === 3 && 'ml-20 lg:ml-[140px]'}`}>
+              <h4 className=' font-medium font-poppins text-base leading-[150%] text-white mb-4 lg:mb-5'>
                 {item.title}
               </h4>
 
-              <ul className=' flex flex-col gap-3'>
+              <ul className=' flex flex-col gap-2.5 lg:gap-3'>
                 {item.navLinks.map((link, index) => (
                   <li key={index}>
-                    <Link href={'#'} className='font-poppins font-normal text-[14px] leading-[150%] text-secondary'>
+                    <Link href={'#'} className='font-poppins font-normal text-sm leading-[150%] text-secondary'>
                       {link}
                     </Link>
                   </li>
@@ -79,12 +79,12 @@ const FooterBottom = () => {
         </div>
       </div>
 {/* =============================================================== */}
-      <div className=' container flex items-center justify-between py-6 border-t border-dark-primary'>
-          <p className='font-poppins text-[14px] font-normal leading-[150%] text-light-gray'>
-            Ecobazar eCommerce © 2026. All Rights Reserved
+      <div className=' container flex flex-col md:flex-row items-center justify-center md:justify-between py-6 border-t border-dark-primary'>
+          <p className='font-poppins text-[12px] md:text-sm font-normal leading-[150%] text-light-gray'>
+            {`Ecobazar eCommerce © ${ new Date().getFullYear() }. All Rights Reserved`}
           </p>
 
-          <div className=' flex items-center gap-x-2 [&>img]:cursor-pointer'>
+          <div className='mt-2.5 md:mt-0 scale-90 md:scale-100 flex items-center gap-x-2 [&>img]:cursor-pointer'>
             <Image src={ApplePlay} alt="Apple play" />
             <Image src={Visa} alt="Visa" />
             <Image src={Discover} alt="Discover" />
