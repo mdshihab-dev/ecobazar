@@ -56,10 +56,10 @@ const FooterBottom = () => {
           </div>
         </div>
 
-        <div className=' flex flex-wrap space-y-5 lg:space-y-0 lg:ml-37'>
+        <div className=' flex flex-wrap md:justify-between xl:justify-start space-y-5 lg:space-y-0 lg:ml-25 lg:space-x-15 xl:space-x-0 xl:ml-37'>
           {
             FooterData.map((item, index) => (
-            <div key={index} className={`${index === 1 && 'ml-16 lg:ml-32.5'} ${index === 2 && 'lg:ml-[135px]'} ${index === 3 && 'ml-20 lg:ml-[140px]'}`}>
+            <div key={index} className={`${index === 1 && ' xl:ml-32.5'} ${index === 2 && ' xl:ml-[135px]'} ${index === 3 && ' xl:ml-[140px]'} w-1/2 md:w-auto`}>
               <h4 className=' font-medium font-poppins text-base leading-[150%] text-white mb-4 lg:mb-5'>
                 {item.title}
               </h4>
